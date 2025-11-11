@@ -1,4 +1,4 @@
-package Fibonacci_homework.calc;
+package Fibonacci_homework;
 
 import java.util.Scanner;
 
