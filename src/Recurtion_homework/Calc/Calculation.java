@@ -1,4 +1,4 @@
-package Fibonacci_homework.Calc;
+package Recurtion_homework.Calc;
 
 public class Calculation {
 

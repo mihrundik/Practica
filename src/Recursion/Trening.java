@@ -1,7 +1,6 @@
-package Fibonacci_homework.Recursion;
+package Recursion;
 
-import Fibonacci_homework.Recursion.TreningSecond.Second;
-import java.util.Scanner;
+import Recursion.TreningSecond.Second;
 
 public class Trening {
     public static void main(String[] args) {
