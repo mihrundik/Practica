@@ -1,4 +1,4 @@
-package Fibonacci_homework.Recursion.TreningSecond;
+package Recursion.TreningSecond;
 
 import java.util.Scanner;
 
