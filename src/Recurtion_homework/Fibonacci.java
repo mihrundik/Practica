@@ -1,6 +1,6 @@
-package Fibonacci_homework;
+package Recurtion_homework;
 
-import Fibonacci_homework.Calc.Calculation;
+import Recurtion_homework.Calc.Calculation;
 import java.util.Scanner;
 
 public class Fibonacci {
