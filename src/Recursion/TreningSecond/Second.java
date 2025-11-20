@@ -130,18 +130,18 @@ public class Second {
     // завершающаяся числом 0. Выведите все нечетные числа из этой последовательности, сохраняя их порядок.
     // В этой задаче нельзя использовать глобальные переменные и
     // передавать какие-либо параметры в рекурсивную функцию. Функция получает данные, считывая их с клавиатуры.
-//    public void tenth(int x) {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.print("Введите число: ");
-//        x = scanner.nextInt();
-//        if (x % 2 != 0) {
-//            System.out.println(x);
-//        }
-//        if (x == 0){
-//            return;
-//        }
-//        tenth(x);
-//    }
+    public void tenth(int x) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число: ");
+        x = scanner.nextInt();
+        if (x % 2 != 0) {
+            System.out.println(x);
+        }
+        if (x == 0){
+            return;
+        }
+        tenth(x);
+    }
 
     // Дана последовательность натуральных чисел (одно число в строке), завершающаяся числом 0.
     // Определите наибольшее значение числа в этой последовательности.
@@ -149,23 +149,23 @@ public class Second {
     // в рекурсивную функцию. Функция получает данные, считывая их с клавиатуры. Функция возвращает
     // единственное значение: максимум считанной последовательности. Гарантируется, что
     // последовательность содержит хотя бы одно число (кроме нуля).
-//    public void eleven(int max, int x){
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.print("Введите число: ");
-//        x = scanner.nextInt();
-//
-//        if (x > 0) {
-//            if (x > max){
-//                max = x;
-//                eleven(max, x);
-//            } else {
-//                eleven(max, x);
-//            }
-//        } else {
-//            System.out.print(max);
-//        }
-//
-//    }
+    public void eleven(int max, int x){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число: ");
+        x = scanner.nextInt();
+
+        if (x > 0) {
+            if (x > max){
+                max = x;
+                eleven(max, x);
+            } else {
+                eleven(max, x);
+            }
+        } else {
+            System.out.print(max);
+        }
+
+    }
 
     // Дана последовательность натуральных чисел (одно число в строке), завершающаяся числом 0.
     // Определите среднее значение элементов этой последовательности (без учета последнего нуля).
@@ -190,7 +190,51 @@ public class Second {
         }
     }
 
+    public void thirteenth(int max1, int max2, int x) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число: ");
+        x = scanner.nextInt();
+        int temp = 0;
 
+        if (x > 0) {
+            if (x >= max1) {
+                max2 = max1;
+                max1 = x;
+            }
+            thirteenth(max1, max2, x);
+
+        } else {
+            System.out.println(max2);
+        }
+    }
+
+    // Дана последовательность натуральных чисел (одно число в строке), завершающаяся числом 0.
+    // Определите, какое количество элементов этой последовательности, равны ее наибольшему элементу.
+    //В этой задаче нельзя использовать глобальные переменные. Функция получает данные,
+    // считывая их с клавиатуры, а не получая их в виде параметра. В программе на языке
+    // Python функция возвращает результат в виде кортежа из нескольких чисел и функция вообще
+    // не получает никаких параметров. В программе на языке C++ результат записывается в переменные,
+    // которые передаются в функцию по ссылке. Других параметров, кроме как используемых для возврата
+    // значения, функция не получает.
+    // Гарантируется, что последовательность содержит хотя бы одно число (кроме нуля).
+    public void fourteenth(int x) {
+        int count = 1;
+        int max = 0;
+
+        while (x != 0) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Введите число: ");
+            x = scanner.nextInt();
+            if (x > max) {
+                max = x;
+            } else if (x == max) {
+                count++;
+            } else {
+                fourteenth(x);
+            }
+        }
+        System.out.println(count);
+    }
 
 
 
