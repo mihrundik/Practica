@@ -1,4 +1,4 @@
-package Lesson_10_11_2025.Tools;
+package lesson_10_11_2025.tools;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

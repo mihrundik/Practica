@@ -1,7 +1,7 @@
-package Lesson_10_11_2025;
+package lesson_10_11_2025;
 
-import Lesson_10_11_2025.Tools.Math;
-import Lesson_10_11_2025.Tools.Search;
+import lesson_10_11_2025.tools.Math;
+import lesson_10_11_2025.tools.Search;
 
 import java.util.Random;
 
@@ -9,7 +9,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        Lesson_10_11_2025.Tools.Math math = new Math();
+        lesson_10_11_2025.tools.Math math = new Math();
         System.out.println(math.sum(1,2,3,4,5,2));
 
         Search search = new Search();
@@ -21,12 +21,12 @@ public class Main {
         System.out.println(math.sumNumber(10));
 
         int[] numbers = new int[5];
-        for(int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             numbers[i] = new Random().nextInt(10);
         }
 
         int statement = 0;
-        for(int i = 0; i < numbers.length - 1; i++) {
+        for (int i = 0; i < numbers.length - 1; i++) {
             for(int j = 0; j < numbers.length - 1; j++) {
                 if(numbers[j] > numbers[j + 1]) {
                     statement = numbers[j];
@@ -36,7 +36,7 @@ public class Main {
             }
         }
 
-        for(int num: numbers) {
+        for (int num: numbers) {
             System.out.print( num + " ");
         }
 
