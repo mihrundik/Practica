@@ -1,4 +1,4 @@
-package Recursion.TreningSecond;
+package recursion.treningSecond;
 
 import java.util.Scanner;
 

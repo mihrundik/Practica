@@ -1,4 +1,4 @@
-package Recurtion_homework.Calc;
+package recurtion_homework.calc;
 
 public class Calculation {
 
@@ -11,7 +11,7 @@ public class Calculation {
 //        }
 //
 //        for(int i = 2; i < z; i++) {
-//            int temp = x + y;
+//              = x + y;
 //            x = y;
 //            y = temp;
 //            System.out.print(y + " ");

@@ -1,6 +1,6 @@
-package Recursion;
+package recursion;
 
-import Recursion.TreningSecond.Second;
+import recursion.treningSecond.Second;
 
 public class Trening {
     public static void main(String[] args) {
